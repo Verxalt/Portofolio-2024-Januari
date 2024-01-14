@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima&family=Montserrat:wght@500&family=Overpass:ital@0;1&family=Poppins:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #EEEEF0;
+    background-color: #0A0A0A;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    display: none;
+}
+
+.navbar {
+    width: 100%;
+    height: 43px;
+    position: fixed;
+    background-color: #1c1c1c;
+    top: 0;
+    z-index: 9999;
+}
+
+
+.navbar .contain-nav .logo span {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffd215;
+}
+
+.navbar .container .contain-nav {
+    height: 100%;
+    display: flex;
+    background-color: #1c1c1c;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar .contain-nav ul {
+    list-style-type: none;
+}
+
+.navbar .contain-nav ul li {
+    display: inline-block;
+}
+
+.navbar .contain-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar .contain-nav ul li i {
+    margin-right: 10px;
+}
+
+/* di hp */
+@media(max-width:767px){
+    .laman-1 {
+        background-image: url('deskwal.png');
+        background-attachment: fixed;
+    }
+    
+    .laman-1 .kosong {
+        display: none;
+    }
+    .contain-nav .button {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .contain-nav .button label {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .contain-nav .button label span {
+        width: 92%;
+        height: 3.5px;
+        display: flex;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        flex-direction: column;
+        background-color: #ffd215;
+        transition: .4s;
+    }
+    
+    .contain-nav .button label span:last-child {
+        margin-bottom: 0px;
+    }
+    
+    .contain-nav .backbar {
+        width: 100%;
+        transform: translateX(100%);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        z-index: 9998;
+    }
+    
+    .contain-nav nav {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 99999;
+        right: 0;
+        display: flex;
+        align-items: center;
+        overflow: none;
+    }
+    
+    .contain-nav nav label {
+        font-size: 20px;
+        font-weight: bold;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .navbar .contain-nav ul {
+        width: 65%;
+        height: 100%;
+        display: flex;
+        background-color: #1c1c1c;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+        box-shadow: -2px 0px 0px #ffd215;
+    }
+    
+    .navbar .contain-nav ul li {
+        margin-bottom: 50px;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    
+    .navbar .contain-nav ul li:last-child {
+        margin-bottom: 0px;
+    }
+    .contain-nav .button label:hover span:nth-child(1) {
+        transform: translateX(5px);
+    }
+    
+    .backbar nav ul li a {
+        transition: .5s;
+    }
+    
+    .backbar nav ul li a:hover i{
+        animation: i .3s forwards;
+        padding: 0 0 3px 0px;
+    }
+    
+    .backbar nav ul li a:hover {
+        animation: a .3s forwards;
+    }
+    
+    
+    
+    @keyframes i {
+        100% {
+            transform: translateY(-5px);
+            box-shadow: 0 3px 0px -1px #ffd215;
+        }
+    }
+    
+    @keyframes a {
+        100% {
+            transform: translateY(-3px);
+            color: #ffd215;;
+        }
+    }
+    
+    .contain-nav .button label:hover span:nth-child(2) {
+        transform: translateX(-5px);
+        background-color: #fff;
+    }
+
+    .contain-nav .button label:hover span:nth-child(3) {
+        transform: translateX(5px);
+    }
+    
+}
+
+
+
+
+/* di desktop/laptop */
+@media(min-width: 768px){
+    .laman-1 img {
+        display: none;
+    }
+
+    .laman-1 {
+        background-image: url('deskwal.png');
+        width: 100%;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    
+    #home .kotak-nama h1 {
+        letter-spacing: 7px;
+        font-size: 29px;
+        text-shadow: 0px 0px 6px #1c1c1c;
+    }
+    
+    #home .kotak-nama span {
+        letter-spacing: 4px;
+        font-size: 18px;
+        text-shadow: 0px 0px 6px #1c1c1c;
+    }
+    
+    .navbar .container {
+        height: 100%;
+        max-width: 768px;
+    }
+    
+    .navbar .container .contain-nav {
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .backbar label {
+        display: none;
+    }
+    
+    .navbar .container .contain-nav ul {
+        display: flex;
+        height: 100%;
+        text-align: center; 
+    }
+    
+    .navbar .contain-nav ul li {
+        margin-right: 20px;
+    }
+    
+    .contain-nav .backbar nav ul li a {
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        transition: .5s;
+    }
+    
+    .backbar nav ul li a:hover{
+        animation: ani .3s forwards;
+    }
+    
+    @keyframes ani {
+        100% {
+            color: #ffd215;;
+        }
+    }
+    
+    .navbar .contain-nav ul li:last-child {
+        margin-right: 0px;
+    }
+    
+    .button, label #btn span {
+        display: none;
+    }
+    
+}
+
+/* span */
+
+
+/* ketika di klik */
+#check:checked~.contain-nav #wrapper {
+    animation: masuk .5s forwards;
+}
+
+@keyframes masuk {
+    100% {
+        transform: translateX(0%);
+        position: absolute;
+    }
+}
+
+/* main */
+/* Halaman 1 */
+
+.container {
+    max-width: 768px;
+    height: 100vh;
+    margin: auto;
+    display: block;
+}
+
+.container:first-child {
+    width: 100%;
+    height: 100%;
+}
+
+.laman-1 {
+    width: 100%;
+    /*max-width: 600px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.laman-1 img {
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    animation: muncul 1s forwards;
+    background-image: linear-gradient(to top, #1c1c1c 10%, rgba(255,210,21,.1) 80%);
+}
+
+@keyframes muncul {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.laman-1 .kotak-nama {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h1, .kotak-nama span {
+    color: #fcfcfc;
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 19px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+}
+#home span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+}
+
+/*.laman-1 .gambar {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}*/
+
+/* halaman 2 */
+
+.laman-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#about .box-tentang {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+#about .box-tentang .biodata h1 {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about .box-tentang .biodata span {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#about .box-tentang img {
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+}
+
+#about .box-tentang p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#about .box-tentang .sosmed {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+#about .box-tentang .sosmed span {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.laman-2 .box-tentang .sosmed ul {
+    margin-top: 10px;
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.laman-2 .box-tentang .sosmed ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.box-tentang .sosmed ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+/* halaman 3 */
+
+.laman-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd215;
+    overflow: hidden;
+    color: #fff;
+}
+
+.laman-3 .project {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 5px;
+    box-sizing: border-box;
+}
+
+.laman-3 .project .item {
+    display: flex;
+    background-color: #1c1c1c;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 5px;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.project .item .text-project {
+    padding: 2px;
+}
+
+.project .item h1 {
+    font-size: 17px;
+    margin: 5px 0px;
+}
+
+.project .item p {
+    font-size: 10px;
+}
+
+.laman-3 .project a img {
+    width: 100%;
+    border-radius: 5px;
+    background-position: center;
+}
+
+.laman-3 .project a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* halaman 4 */
+
+.laman-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    overflow: hidden;
+    color: #fff;
+}
+
+.laman-4 .containform {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(28,28,28,.1) 80%, #ffd215 20%);
+}
+
+.contactbox {
+    width: 80%;
+    color: #1c1c1c;
+    border-radius: 6px;
+    background-color: #ffd215;
+    padding: 7px 13px 12px 13px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1c1c1c;
+    box-sizing: border-box;
+}
+
+.containform .contactbox h1 i {
+    margin-right: 6px;
+    font-size: 20px;
+    color: #1c1c1c;
+}
+
+.contactbox h1 {
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+.contactbox .pembatas {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.contactbox p {
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.kontaksaya {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontaksaya .item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.kontaksaya .item span {
+    word-break: break-all;
+}
+
+.kontaksaya .item i {
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+.kontaksaya .item:nth-child(2) i {
+    font-size: 24.7px;
+}
+
+.kontaksaya .item span {
+    font-size: 15px;
+}
