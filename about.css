@@ -64,6 +64,8 @@ input {
 @media(max-width:767px){
     .laman-1 {
         background-image: url('deskwal.png');
+        background-attachment: fixed;
+        background-size: cover;
     }
     
     .laman-1 .kosong {
